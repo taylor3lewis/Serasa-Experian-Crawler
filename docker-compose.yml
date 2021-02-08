@@ -1,0 +1,14 @@
+version: "3"
+services:
+    app:
+        build: .
+        ports:
+            - "5000:5000"
+        volumes: ['./app:/app']
+        env_file:
+          - .env
+        environment:
+            FLASK_DEBUG: 1
+            FLASK_APP: ./webservices.py
+            PYTHONUNBUFFERED: 1
+        network_mode: host

@@ -1,0 +1,7 @@
+requests
+flask
+flask-cors
+Flask-Caching
+selenium
+lxml
+beautifulsoup4
